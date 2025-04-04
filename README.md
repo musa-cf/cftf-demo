@@ -4,6 +4,33 @@ The v5 Terraform provider support in cf-terraforming is still a work-in-progress
 the tool could be used to Terraform an existing set of configured Cloudflare resources, and extend
 it by adding a new resource via Terraform.
 
+The main application of cf-terraforming is for creating a new Terraform project using existing configurations
+that aren't currently managed by Terraform.
+
+The following resources are included in this demo:
+
+**Account-scoped:**
+
+✔️ Zones
+
+✔️ Load Balancer Pools
+
+✔️ R2 Buckets (new in v5)
+
+**Zone-scoped**
+
+✔️ Browser Cache TTL Zone Setting
+
+✔️ IP Geolocation Zone Setting
+
+✔️ Caching Level Zone Setting
+
+✔️ Load Balancers
+
+✔️ DNS Records
+
+✔️ Workers KV Namespace
+
 ## Prerequisites
 1. Git, Go, and Terraform are installed locally
 2. You've cloned this repo
